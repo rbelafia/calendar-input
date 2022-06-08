@@ -1,0 +1,126 @@
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  text-align: center;
+  height: 85vh;
+  --accent-color: #00e08a;
+  --accent-font-color: white;
+  --back-color: #b2becd;
+  --secondary-color: white;
+  --white-color: white;
+  --black-color: black;
+  font-family: "Helvetica Neue", "Open sans", sans-serif;
+}
+
+.App.dark {
+
+  --back-color: black;
+  --black-color: white;
+  --secondary-color: #2a2e35;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-title {
+}
+
+.App-header {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  display: grid;
+  justify-content: left;
+  grid-template-columns: 2fr 4fr 1fr;
+  font-size: 1.5em;
+}
+
+
+.App-headerMenu {
+  display: inline-flex;
+  list-style: none;
+}
+
+.App-headerOption {
+  display: inline-flex;
+  list-style: none;
+  place-items: center;
+  caret-color: transparent;
+}
+.App-headerSelector {
+  display: grid;
+  place-items: center;
+  padding: 0 2% 0 2%;
+  background-color: var(--accent-color);
+}
+
+
+
+.App-headerSelector:hover {
+  -webkit-filter: brightness(90%);
+}
+
+.App-circleLight {
+  fill: var(--accent-color);
+}
+
+.App-circleDark {
+  fill: var(--accent-color);
+}
+
+h1 {
+  color: var(--accent-color);
+}
+h4 {
+  font-weight: normal;
+  color: var(--accent-font-color);
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110%;
+  background-color: var(--back-color);
+  color: var(--black-color);
+}
+
+.App-main > div {
+  margin-top: 2%;
+  height: 90%;
+  width: 40%;
+  list-style-type: none;
+  padding: 2%;
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.Card-button {
+  -webkit-filter: drop-shadow( 0 0 1px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow( 0 0 1px rgba(0, 0, 0, 0.25));
+  height: 1.5em;
+  aspect-ratio: 1 / 1;
+}
+
+.App-triangle {
+  fill: var(--accent-color);
+}
